@@ -1,8 +1,7 @@
 # Python
 Flask app deployement
 
-This guide walks you through the step-by-step deployment of a simple Python Flask web application on an AWS EC2 instance. The app is served using Gunicorn with a WSGI interface.
-
+ 
 1. Launch EC2 and Connect via SSH
 
 - Go to AWS EC2 dashboard.
