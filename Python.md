@@ -82,4 +82,5 @@ now we can see a random motivational quote in JSON format.
   "quote": "Push yourself, because no one else is going to do it for you."
 }
 🎉 Deployment Successful!
+![Image](https://github.com/user-attachments/assets/f6530037-8ebd-42cc-8823-73214eefb04f)
 
