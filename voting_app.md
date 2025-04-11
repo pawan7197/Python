@@ -35,96 +35,94 @@ dh-python: Packaging helper for Python.
 ```
 sudo apt install git -y
 ```
-What it does: Installs Git version control system.
+it Installs Git version control system.
 
-Why it matters: Git is required to clone the source code from GitHub.
-
-🔍 4. Verify Git Installation
+4. Verify Git Installation
+```bash
 git -v
-What it does: Displays the current version of Git installed on your system.
+```
+it Displays the current version of Git installed on your system.
 
-Why it matters: Ensures that Git was successfully installed.
-
-🌐 5. Clone the Voting App Repository
-
+ 5. Clone the Voting App Repository
+```bash
 git clone https://github.com/dockersamples/example-voting-app.git
-What it does: Clones the Example Voting App repository from GitHub to your local machine.
+```
+it Clones the Example Voting App repository from GitHub to your local machine.
 
-Why it matters: Downloads the source code of the app to run locally.
-
-Step 2: Set Up the Environment
-📂 6. Change Directory to the Cloned Repo
-
+Set Up the Environment
+6. Change Directory to the Cloned Repo
+```bash
 cd example-voting-app/
-What it does: Changes the current directory to the example-voting-app folder.
+```
+it Changes the current directory to the example-voting-app folder.
 
-Why it matters: You need to be inside this directory to work with the app's code.
-
-📂 7. Navigate to the vote/ Folder
+ 7. Navigate to the vote/ Folder
+```bash
 cd vote/
-🧑‍💻 8. Install Python 3 Virtual Environment Package
-
+```
+ 8. Install Python 3 Virtual Environment Package
+```bash
 sudo apt install python3-venv
-What it does: Installs the python3-venv package to enable Python virtual environments.
+```
+it Installs the python3-venv package to enable Python virtual environments.
 
-Why it matters: A virtual environment isolates your Python dependencies to avoid conflicts with the system Python installation.
-
-🌱 9. Create a Virtual Environment
-
+9. Create a Virtual Environment
+```bash
 python3 -m venv myenv
+```
 What it does: Creates a virtual environment named myenv.
 
-Why it matters: This ensures that dependencies are isolated within the project, preventing system-wide conflicts.
-
-🧑‍💻 10. Activate the Virtual Environment
-
+ 10. Activate the Virtual Environment
+```bash
 source myenv/bin/activate
+```
 What it does: Activates the myenv virtual environment.
 
-Why it matters: Ensures that all Python commands and package installations are done within the isolated environment.
-
-📥 11. Install Flask
-
+ 11. Install Flask
+```bash
 pip3 install flask
+```
 What it does: Installs Flask, a micro web framework for Python.
 
-Why it matters: Flask is required to run the voting app.
-
-🚀 12. Run the Voting App
-
+ 12. Run the Voting App
+```bash
 python3 app.py
-Step 3: Configure Additional Services
-🛠️ 13. Install Redis
-
+```
+Now Configure Additional Services
+ 13. Install Redis
+```bash
 sudo apt install redis-server
+```
 What it does: Installs Redis, an in-memory data store that can be used for caching and session management.
 
-Why it matters: Redis is used to improve performance by storing and retrieving session data.
-
-📦 14. Install Redis Python Client
-
+14. Install Redis Python Client
+```bash
 sudo pip install redis
-Step 4: Finalize and Test
-🔄 15. Restart the Flask App
-
+```
+Now Finalize and Test
+ 15. Restart the Flask App
+```bash
 python3 app.py
-🔒 16. Set File Permissions for app.py
+```
+ 16. Set File Permissions for app.py
+ 17. ```bash
 chmod +x app.py
-🔑 17. Check App Ownership
-
+```
+17. Check App Ownership
+```bash
 sudo chown ubuntu:ubuntu app.py
+```
 What it does: Changes the ownership of app.py to the ubuntu user.
 
-Why it matters: Ensures you have the right permissions to modify and run the file.
+ 18. View the App in the Browser
+  ```bash
+ browser and visit http://127.0.0.1:5000. You should see the voting app running.
+  ```
 
-🌍 18. View the App in the Browser
-Open your browser and visit http://127.0.0.1:5000. You should see the voting app running.
+Now Troubleshooting
 
-Step 5: Troubleshooting
 
-Conclusion
-🎉 Congratulations! You have successfully set up the Example Voting App! This app uses Flask and Redis to implement a voting system, and you've now set it up with all necessary dependencies.
 
-You can now visit your app at http://127.0.0.1:5000 and interact with it. Feel free to modify the code, customize the app, or deploy it to a production environment.
+now visit app at http://127.0.0.1:5000 and interact with it.
 
 Image
