@@ -103,7 +103,7 @@ Now Finalize and Test
 python3 app.py
 ```
  16. Set File Permissions for app.py
- 17. ```bash
+ ```bash
 chmod +x app.py
 ```
 17. Check App Ownership
