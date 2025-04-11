@@ -1,21 +1,23 @@
-documentation for deploying the Example Voting App:
+# documentation for deploying the Example Voting App:
 Voting App Deployment - Detailed Documentation
 This guide provides detailed, step-by-step instructions to deploy the Example Voting App using Python, Redis, and Flask. Follow the instructions below to get started.
 
 Step 1: Prepare Your System
 🖥️ 1. Update Package List
+```bash
 sudo apt update -y
-What it does: Updates the list of available packages from all repositories.
+```
+After this it Updates the list of available packages from all repositories.
 
 Why it matters: Ensures your system has the latest package information, preventing outdated software installations.
 
 ⚙️ 2. Install Required Development Tools
 Copy
 Edit
+```
 sudo apt install -y libmariadb-dev gcc g++ build-essential python3-dev dh-python
-What it does: Installs development tools and libraries needed for building software and compiling code.
-
-Why it matters: These tools help in compiling Python extensions and building dependencies like MariaDB.
+```
+it Installs development tools and libraries needed for building software and compiling code.
 
 Explanation:
 
@@ -29,8 +31,10 @@ python3-dev: Header files for Python.
 
 dh-python: Packaging helper for Python.
 
-🛠️ 3. Install Git
+3. Install Git
+```
 sudo apt install git -y
+```
 What it does: Installs Git version control system.
 
 Why it matters: Git is required to clone the source code from GitHub.
