@@ -11,10 +11,9 @@ After this it Updates the list of available packages from all repositories.
 
 Why it matters: Ensures your system has the latest package information, preventing outdated software installations.
 
-⚙️ 2. Install Required Development Tools
-Copy
-Edit
-```
+ 2. Install Required Development Tools
+
+```bash
 sudo apt install -y libmariadb-dev gcc g++ build-essential python3-dev dh-python
 ```
 it Installs development tools and libraries needed for building software and compiling code.
